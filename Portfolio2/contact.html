@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio2</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yohannes Teshome</h1>
+
+    <nav>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <p>Thank you for visiting the State of Michigan.  Please help us rate the service you received
+      in all areas.  How do you rate your stay? </p>
+
+<form
+  action="mailto:yteshome@portfolio.com"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailTestForm">
+
+
+
+  <p>Please input a number between 5 and 20:</p>
+
+  <input id="number">
+
+  <button type="button" onclick="myFunction()">Submit</button>
+
+  <p id="display"></p><br>
+
+
+
+Your Name:<br>
+<input type="text" size="20" name="VisitorName"><br><br>
+
+Your email:<br>
+<input type="text" size="20" name="EmailAddress"><br><br>
+
+Your City:<br>
+<input type="text" size="20" name="CityName"><br><br>
+
+Your Comment:<br>
+<textarea name="VisitorComment" rows="6" cols="40">
+</textarea><br><br>
+
+<input type="submit" value="Submit"><br>
+
+<script>
+  function myFunction() {
+    var x, text;
+        x = document.getElementById("number").value;
+        if (isNaN(x) || x < 5 || x > 15) {
+        text = "Input not valid!  Please try again!";
+    } else if (isNaN(x) || x >= 5 && x <= 10) {
+        text = "Thank you and we can assure you we will improve our service!";
+    }else if (isNaN(x) || x >= 11 && x <= 15) {
+        text = "Thank you and we are glad you satisfied with our service!";
+    }
+
+
+      document.getElementById("display").innerHTML = text;
+    }
+</script>
+
+
+
+<!-- </form>
+<form method="post" action="contact.php">
+        <label>Name:</label>
+        <input name="sender">
+
+        <label>Email address:</label>
+        <input name="senderEmail">
+
+        <label>Message:</label>
+        <textarea rows="5" cols="20" name="message"></textarea>
+
+        <input type="submit" name="submit">
+  </form> -->
+</div>
+</body>
+</html>
