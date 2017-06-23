@@ -29,7 +29,7 @@
 
 
 
-  <p>Please input a number between 5 and 20:</p>
+  <p>Please input a number between 5 and 15 to rate our service with 5 being the lowest and 15 being the highest:</p>
 
   <input id="number">
 
@@ -61,9 +61,9 @@ Your Comment:<br>
         if (isNaN(x) || x < 5 || x > 15) {
         text = "Input not valid!  Please try again!";
     } else if (isNaN(x) || x >= 5 && x <= 10) {
-        text = "Thank you and we can assure you we will improve our service!";
+        text = x +'!'  + " Thank you, and we will definitely work hard to improve our service!";
     }else if (isNaN(x) || x >= 11 && x <= 15) {
-        text = "Thank you and we are glad you satisfied with our service!";
+        text = x +'!!' + " Thank you; and we are glad that you are satisfied with our service!";
     }
 
 

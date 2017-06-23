@@ -16,7 +16,8 @@ p {
 img {
   height: 200px;
   width: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
   }
 
 .image {
@@ -25,6 +26,8 @@ img {
   width: 300px;
   padding: 20px;
   margin-left: 40px;
+  box-shadow: inset 0 0 20px #000000;
+  border-radius: 10px;
   }
 
 figcaption {
@@ -54,3 +57,10 @@ blockquote {
 li {
   font-weight: bolder;
   }
+
+  input, Textarea {
+  background-color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  color: green;
+}
